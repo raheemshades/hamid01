@@ -347,17 +347,12 @@ class _MyHomePageState extends State<MyHomePage> {
       context: context,
       isScrollControlled: true,
       isDismissible: true,
-      // color is applied to main screen when modal bottom screen is displayed
       barrierColor: Colors.grey.withOpacity(0.7),
-      //background color for modal bottom screen
       backgroundColor: Colors.grey.withOpacity(0.7),
-      //elevates modal bottom screen
       elevation: 10,
-      // gives rounded corner to modal bottom screen
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10.0),
       ),
-
       builder: (BuildContext context) {
         var width = MediaQuery.of(context).size.width;
         var height = MediaQuery.of(context).size.height;
